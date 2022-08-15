@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-image: url("476288.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+height: 100vh;
+justify-content: stretch;
+display: grid;
+grid-gap: 3px;
+grid-template-columns: 8, 1fr;
+grid-template-rows:100px 50px 150px 150px 150px 150px 557px 50px;
+grid-template-areas: "h h h h h h h h "
+                     ". . . . s s s s "
+                     ". . . . . . . . "
+                     ". . . . . . . . "
+                     ". . . . i i i i "
+                     ". . . . o o o o " 
+                     ". . . . . . . . "                                                     
+                     "f f f f f f f f "
+        
+}
+
+              
+.Navbar {
+    grid-area: h;
+    width: 100%;
+
+}
+
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkolivegreen;
+    border-style: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    float: right;
+    margin-left: auto;
+    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background: blanchedalmond;
+}
+
+form {
+    grid-area: s;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar {
+    margin-left: 20px;
+    width: 740px;
+    background: darkgreen;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search-bar button img {
+    width: 30px;
+}
+.search-bar button {
+    border: 0;
+    border-style: groove;
+    border-radius: 55%;
+    width: 45px;
+    height: 45px;
+    background: white;
+    cursor: pointer;
+}
+
+.Img {
+    grid-area: i;
+}
+
+
+
+.Img img {
+    width: 200px;
+    height: 150px;
+    
+}
+
+
+.Img2 {
+    grid-area: o;
+}
+
+
+.Img2 img {
+    width: 200px;
+    height: 150px;
+    background-color: #333;
+}
+
+
+
+
+.Footer {
+    
+    grid-area: f;
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width:850px) {
+    .search-bar {
+        width: 80%;
+    }
+}

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-image: url("476288.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+height: 100vh;
+justify-content: stretch;
+display: grid;
+grid-gap: 3px;
+grid-template-columns: 8, 1fr;
+grid-template-rows:100px 50px 150px 150px 150px 150px 557px 50px;
+grid-template-areas: "h h h h h h h h "
+                     ". . . . . . . . "
+                     ". . a a a a . . "
+                     ". . a a a a . . "
+                     ". . b b b b . . "
+                     ". . b b b b . . " 
+                     ". . . . . . . . "                                                     
+                     "f f f f f f f f "
+        
+}
+
+              
+.Navbar {
+    grid-area: h;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkolivegreen;
+    border-style: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    float: right;
+    margin-left: auto;
+    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+.about {
+    grid-area: a;
+    margin-left: 700px;
+    margin-right: 700px;
+    background-color: #333;
+    border: saddlebrown solid;
+}
+
+.about h1{
+    margin-left: 500px;
+}
+
+.about p {
+    margin-left: 150px;
+}
+
+.about1 {
+    grid-area: b;
+    margin-left: 700px;
+    margin-right: 700px;
+    background-color: #333;
+    border:saddlebrown solid;
+}
+
+.about1 h1{
+    margin-left: 500px;
+    
+}
+
+.about1 p {
+    margin-left: 150px;
+}
+
+.Footer {
+    
+    grid-area: f;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:850px) {
+  
+}
